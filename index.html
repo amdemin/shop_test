@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      html,
+      body,
+      header,
+      .carousel {
+        height: 60vh;
+      }
+
+      @media (max-width: 740px) {
+
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+  
+    <!-- Navbar in the header class="navbar navbar-main navbar-expand-lg navbar-light white"-->
+    <nav id="navbar-main" class="navbar navbar-expand-lg white navbar-light navbarMain">
+      <div class="container">
+        <a href="index.html" class="navbar-brand waves-effect">
+          <strong class="blue-text">SPOT</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+        
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link waves-effect">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop-page.html" class="nav-link waves-effect">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">Blog</a>
+            </li>
+          </ul>
+          
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <span class="badge red z-depth-1 mr-1"></span>
+                <i class="fa fa-shopping-cart"></i>
+                <span class="clearfix d-none d-sm-inline-block">Cart</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fab fa-facebook fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Slider below the header -->
+    <div id="carousel-ex" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel-ex" data-slide-to="0"></li>
+        <li data-target="#carousel-ex" data-slide-to="1"></li>
+        <li data-target="#carousel-ex" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+      
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+          background-repeat: no-repeat; background-size: cover;">
+            <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+                <div class="text-center white-text mx-5 wow fadeIn">
+                
+                  <h1 class="mb-4">
+                    <strong>New summer collection</strong>
+                  </h1>
+                  
+                  <p>
+                    <strong>Surprise your friends by walking in our stylish clothes!</strong>
+                  </p>
+                  
+                  <a href="#" class="btn btn-outline-light btn-lg">
+                    See new clothes <i class="fa fa-arrow-alt-circle-down ml-2 fa-lg"></i>
+                  </a>
+                  
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url(https://images.pexels.com/photos/1040473/pexels-photo-1040473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+          background-repeat: no-repeat; background-size: cover;">
+            <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+                <div class="text-center white-text mx-5 wow fadeIn">
+                
+                  <h1 class="mb-4">
+                    <strong>Summer 2020</strong>
+                  </h1>
+                  
+                </div>
+            </div>
+          </div> 
+        </div>
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); background-repeat: no-repeat; background-size: cover;">
+            <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+                <div class="white-text mx-5 wow fadeIn">
+                
+                  <h1 class="mb-4">
+                    <strong>Summer 2020</strong>
+                  </h1>
+                  
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <a href="#carousel-ex" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a href="#carousel-ex" class="carousel-control-next" role="button" data-slide="prev">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+ 
+    </div>
+    
+    <main>
+      <div class="container">
+        
+        <!-- Navbar menu -->
+        <nav class="navbar navbar-expand-xl navbar-dark mdb-color lighten-3 mt-3 mb-5">
+        
+          <span class="navbar brand" style="font-weight:bolder; color: #fff;">Categories:</span>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nextNav" aria-controls="nextNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span>
+        
+          </button>
+          
+          <div class="collapse navbar-collapse" id="nextNav">
+
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">All</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">T-shirts</a>
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Jackets</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Pants</a>
+              </li>
+            </ul>
+            
+            <form class="form-inline">
+              <div class="md-form my-0">
+                <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+
+          </div>
+        
+        </nav>
+        
+        <section class="text-center mb-4">
+          <div class="row wow fadeIn">
+          
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://www.hellyhansen.com/media/catalog/product/6/2/62939_300-1-hero.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=388&width=388&canvas=388:388" alt="Helly Hansen">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">Helly Hansen <br/> orange jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>350 $</strong>
+                  </h4>
+                 
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://www.hellyhansen.com/media/catalog/product/6/2/62938_222-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=600&width=600&canvas=600:600" alt="Helly Hansen">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">Helly Hansen <br/> red jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>400 $</strong>
+                  </h4>
+                 
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://s7d2.scene7.com/is/image/marmot/41520_7534_P001_S20?wid=600&hei=600&resMode=sharp&qlt=94" 
+                 alt="Marmot">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">Marmot <br/> red-yellow jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>90 $</strong>
+                  </h4>
+                 
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://images.thenorthface.com/is/image/TheNorthFace/NF0A4QZ7_JK3_hero?$329x329$" width="600px" height="250px" alt="North Face">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">North Face <br/> black jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>89 $</strong>
+                  </h4>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row wow fadeIn">
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://images.thenorthface.com/is/image/TheNorthFace/NF0A4P7K_F89_hero?$329x385$" alt="North Face">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">North Face <br/> blue jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>300 $</strong>
+                  </h4>
+                 
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://www.hellyhansen.com/media/catalog/product/5/3/53426_990-2-main6.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=388&width=388&canvas=388:388" alt="Helly Hansen">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">Helly Hansen <br/> black jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>100 $</strong>
+                  </h4>
+                 
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://www.hellyhansen.com/media/catalog/product/6/5/65670_971-2-main3.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=388&width=388&canvas=388:388" alt="Helly Hansen">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">Helly Hansen <br/> gray jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>170 $</strong>
+                  </h4>
+                 
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+              
+                <div class="view overlay">
+                  <img class="card-img-top" src="https://s7d2.scene7.com/is/image/marmot/41060_7533_P001_S20?wid=218&hei=327&resMode=sharp&qlt=94" alt="Marmot">
+                  <a href="#" >
+                    <div class="mask rgba-white-slight">
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body text-center">
+                
+                  <a href="#" class="grey-text">
+                  <h5>T-shirt</h5>
+                  </a>
+                  
+                  <h5>
+                  <strong><a href="#" class="dark-grey-text">Marmot <br/> red jacket
+                  <span class="badge badge-pill danger-color">New</span>
+                  </a></strong>
+                  </h5>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>250 $</strong>
+                  </h4>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+        
+        <nav class="d-flex justify-content-center wow fadeIn">
+          <ul class="pagination pg-blue">
+            <li class="page-item disabled">
+              <a href="#" class="page-link" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a href="#" class="page-link" aria-label="Previous">
+                <span aria-hidden="true">1</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link" aria-label="Previous">
+                <span aria-hidden="true">2</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link" aria-label="Previous">
+                <span aria-hidden="true">3</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link" aria-label="Previous">
+                <span aria-hidden="true">4</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link" aria-label="Previous">
+                <span aria-hidden="true">5</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          
+          </ul>
+        </nav>
+      </div>
+    </main>
+    
+    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    
+      <div class="pt-4">
+        <a href="#" role="button" class="btn btn-outline-white">
+          WDB
+          <i class="fa fa-graduation-cap"></i>
+        </a>
+        <a href="#" role="button" class="btn btn-outline-white">
+          Online shop
+          <i class="fa fa-graduation-cap"></i>
+        </a>
+      </div>
+      
+      <hr class="my-4">
+      <div class="pb-4">
+        <a href="#">
+          <i class="fab fa-facebook mr-3 fa-lg"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter mr-3 fa-lg"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube mr-3 fa-lg"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-google-plus mr-3 fa-lg"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-dribbble mr-3 fa-lg"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-pinterest mr-3 fa-lg"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-github mr-3 fa-lg"></i>
+        </a>
+      </div>
+      
+      <div class="footer-copyright py-3">
+        Online shop
+      </div>
+      
+    </footer>
+
+    
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
